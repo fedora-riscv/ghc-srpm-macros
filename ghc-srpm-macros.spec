@@ -5,10 +5,11 @@
 
 Name:           ghc-srpm-macros
 Version:        1.3
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        RPM macros for building Haskell source packages
 
-License:        GPLv3+
+License:        GPLv2+
+Url:            http://pkgs.fedoraproject.org/cgit/ghc-srpm-macros.git
 BuildArch:      noarch
 
 Source0:        macros.ghc-srpm
@@ -34,5 +35,10 @@ install -p -D -m 0644 %{SOURCE0} %{buildroot}/%{macros_dir}/macros.ghc-srpm
 
 
 %changelog
+* Fri Jun 27 2014 Jens Petersen <petersen@redhat.com> - 1.3-2
+- add pkg git as URL (#1093541)
+- downgrade license tag to GPLv2+ in line with rpm (redhat-rpm-config is GPL+)
+- sync with current ghc-rpm-macros: add ghc_arches for backwards compatibility
+
 * Fri May  2 2014 Jens Petersen <petersen@redhat.com> - 1.3-1
 - separate from ghc-rpm-macros
