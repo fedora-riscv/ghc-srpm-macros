@@ -4,8 +4,8 @@
 %global macros_dir %{_rpmconfigdir}/macros.d
 
 Name:           ghc-srpm-macros
-Version:        1.3
-Release:        2%{?dist}
+Version:        1.4
+Release:        1%{?dist}
 Summary:        RPM macros for building Haskell source packages
 
 License:        GPLv2+
@@ -35,6 +35,9 @@ install -p -D -m 0644 %{SOURCE0} %{buildroot}/%{macros_dir}/macros.ghc-srpm
 
 
 %changelog
+* Tue Feb 17 2015 Jens Petersen <petersen@redhat.com> - 1.4-1
+- ghc-7.8 shared libraries allow ghci to work on all arch's
+
 * Fri Jun 27 2014 Jens Petersen <petersen@redhat.com> - 1.3-2
 - add pkg git as URL (#1093541)
 - downgrade license tag to GPLv2+ in line with rpm (redhat-rpm-config is GPL+)
