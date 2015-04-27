@@ -4,7 +4,7 @@
 %global macros_dir %{_rpmconfigdir}/macros.d
 
 Name:           ghc-srpm-macros
-Version:        1.4.1
+Version:        1.4.2
 Release:        1%{?dist}
 Summary:        RPM macros for building Haskell source packages
 
@@ -35,6 +35,9 @@ install -p -D -m 0644 %{SOURCE0} %{buildroot}/%{macros_dir}/macros.ghc-srpm
 
 
 %changelog
+* Mon Apr 27 2015 Jens Petersen <petersen@redhat.com> - 1.4.2-1
+- reenable ghci on aarch64 (#1203951)
+
 * Thu Mar 19 2015 Jens Petersen <petersen@fedoraproject.org> - 1.4.1-1
 - disable ghci on aarch64 due to dynlinked runtime problems (see #1195231)
 
