@@ -9,7 +9,7 @@ Release:        7%{?dist}
 Summary:        RPM macros for building Haskell source packages
 
 License:        GPLv2+
-Url:            http://pkgs.fedoraproject.org/cgit/ghc-srpm-macros.git
+Url:            https://src.fedoraproject.org/rpms/ghc-srpm-macros
 BuildArch:      noarch
 
 Source0:        macros.ghc-srpm
