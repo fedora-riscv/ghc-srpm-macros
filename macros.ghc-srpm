@@ -7,9 +7,3 @@
 # ghc_arches is not used in current packages but still here for back compat
 # former archs: alpha ppc sparcv9 armv5tel
 %ghc_arches %{ix86} x86_64 armv7hl ppc64 ppc64le aarch64 s390 s390x
-
-# enable profiling libraries in prof subpkgs
-%with_ghc_prof 1
-
-# enable library documentation in doc subpkgs
-%with_haddock 1
