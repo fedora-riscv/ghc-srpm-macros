@@ -7,3 +7,7 @@
 # ghc_arches is not used in current packages but still here for back compat
 # former archs: alpha ppc sparcv9 armv5tel
 %ghc_arches %{ix86} x86_64 armv7hl ppc64 ppc64le aarch64 s390 s390x
+
+# control whether to BR devel or prof library packages
+# (prof subpackages were introduced in F31)
+%ghc_devel_prof prof
