@@ -5,7 +5,7 @@
 
 Name:           ghc-srpm-macros
 Version:        1.6.1
-Release:        1%{?dist}
+Release:        1.rv64%{?dist}
 Summary:        RPM macros for building Haskell source packages
 
 License:        GPLv2+
@@ -35,6 +35,9 @@ install -p -D -m 0644 %{SOURCE0} %{buildroot}/%{macros_dir}/macros.ghc-srpm
 
 
 %changelog
+* Wed Apr 05 2023 Liu Yang <Yang.Liu.sn@gmail.com> - 1.6.1-1.rv64
+- Add riscv64 to ghc arches.
+
 * Mon Jan 30 2023 Jens Petersen <petersen@redhat.com> - 1.6.1-1
 - restore ghc_devel_prof for existing ghc spec files
 
