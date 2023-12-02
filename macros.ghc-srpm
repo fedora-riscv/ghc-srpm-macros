@@ -2,7 +2,7 @@
 
 # ghc_arches is not used in current packages but still here for back compat
 # former archs: alpha ppc sparcv9 armv5tel
-%ghc_arches %{ix86} x86_64 armv7hl ppc64le aarch64 s390x
+%ghc_arches %{ix86} x86_64 armv7hl ppc64le aarch64 s390x riscv64
 
 # deprecated - kept for ghc.spec back compatibility
 %ghc_devel_prof prof
